@@ -33,10 +33,22 @@ const observer = new IntersectionObserver((entries) => {
         if(entry.isIntersecting) {
             entry.target.classList.remove('hide');
             entry.target.classList.add('show');
+            if(entry.target.id == 'about-col-2'){
+                if(window.innerWidth < 600) {
+                    console.log('hello');
+                    entry.target.classList.remove('hover:shadow-red-950', 'hover:shadow-lg', 'hover:scale-105');
+                    entry.target.classList.add('scale-105', 'shadow-lg', 'shadow-red-950');
+                }
+            }
         }
         else {
             entry.target.classList.add('hide');
             entry.target.classList.remove('show');
+            if(entry.target.id == 'about-col-2'){
+                if(window.innerWidth < 600) {
+                    entry.target.classList.remove('scale-105', 'shadow-lg', 'shadow-red-950');
+                }
+            }
         }
     });
 });
