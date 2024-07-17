@@ -487,6 +487,9 @@ nav .fa-solid{
     .tab-contents.active-tab#education{
         height: 180px;
     }
+    .services-list div p{
+        height: 52%;
+    }
 }
 
 
