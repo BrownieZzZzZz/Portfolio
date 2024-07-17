@@ -2,8 +2,8 @@
     --dark: #080808;
     --gray: #ababab;
     --light: #fff;
-    --red: #ff004f;
-    --lightred: #b54769;
+    --primary: ;
+    --secondary: ;
     --darkgray: #262626;
     --green: #61b752;
 }
@@ -65,7 +65,7 @@ nav ul li a::after{
     width: 0;
     height: 3px;
     border-radius: 1px;
-    background: var(--red);
+    background: var(--primary);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -84,11 +84,11 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text span{
-    color: var(--red);
+    color: var(--primary);
 }
 
 .gradient-text-1{
-    color:var(--red)
+    color:var(--primary)
 }
 
 
@@ -141,7 +141,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: var(--red);
+    background: var(--primary);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -158,7 +158,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: var(--lightred);
+    color: var(--secondary);
     font-size: 14px;
 }
 .tab-contents{
@@ -232,13 +232,13 @@ nav ul li a:hover::after{
     font-size:15px;
 }
 .service-tile-phone{
-    background: var(--red) !important;
+    background: var(--primary) !important;
     transform: translateY(-10px) !important;
     opacity: 1 !important;
     scale: 1.05 !important;
 }
 .service-tile:hover{
-    background: var(--red);
+    background: var(--primary);
     transform: translateY(-10px);
     opacity: 1;
     scale: 1.05;
@@ -275,7 +275,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--red));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--primary));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -296,7 +296,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: var(--red);
+    color: var(--primary);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -317,7 +317,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid var(--red);
+    border: 1px solid var(--primary);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -325,7 +325,7 @@ nav ul li a:hover::after{
     transition: all 0.5s;
 }
 .btn:hover{
-    background: var(--red);
+    background: var(--primary);
 }
 
 
@@ -344,7 +344,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: var(--red);
+    color: var(--primary);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -361,12 +361,12 @@ nav ul li a:hover::after{
     transition: all 0.5s;
 }
 .social-icons a:hover{
-    color: var(--red);
+    color: var(--primary);
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: var(--red);
+    background: var(--primary);
 }
 
 .contact-right form{
@@ -385,7 +385,7 @@ form input, form textarea{
 }
 form input:focus, form textarea:focus{
     scale:1.025;
-    border: 2px solid var(--red);
+    border: 2px solid var(--primary);
 }
 
 form .btn2{
@@ -449,7 +449,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: var(--red);
+        background: var(--primary);
         position: fixed;
         top: 0;
         right: -200px;
@@ -541,7 +541,7 @@ nav .fa-solid{
     background-color:var(--dark);
 }
 ::-webkit-scrollbar-thumb{
-    background-color:var(--red);
+    background-color:var(--primary);
     border-radius:10px;
 }
 ::-webkit-scrollbar-thumb:hover{
@@ -556,7 +556,7 @@ nav .fa-solid{
   position: absolute;
   top: 0;
   left: 0;
-  fill: var(--red);
+  fill: var(--primary);
   filter: blur(4px);
   width: 50vmax;
   z-index: -1;

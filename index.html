@@ -11,13 +11,12 @@
     />
     <title>Lafi Raed</title>
     <script src="https://cdn.tailwindcss.com?"></script>
-    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
     <script
       src="https://kit.fontawesome.com/3839f90d08.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body onload="myLoad()">
     <div id="header" class="scroll-smooth">
       <div class="blob">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
@@ -57,11 +56,11 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1 hide">
-            <img src="images/blurry-gradient-haikei.png" />
+            <img id="gradientImage"/>
           </div>
           <div
             id = "about-col-2"
-            class="about-col-2 phone-element hide p-5 shadow rounded-xl hover:shadow-red-950 hover:shadow-lg hover:scale-105"
+            class="about-col-2 phone-element hide p-5 shadow rounded-xl hover:scale-105"
           >
             <h1 class="sub-title">About Me</h1>
             <p>

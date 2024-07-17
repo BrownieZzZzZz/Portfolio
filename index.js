@@ -7,7 +7,35 @@ const message = document.getElementById('confirm-message');
 const hiddenElements = document.querySelectorAll('.hide');
 const phoneElements = document.querySelectorAll('.phone-element');
 const phoneOptions = {
-    threshold: 0.8
+    threshold: 0.9
+}
+const aboutDiv = document.querySelector('#about-col-2');
+const aboutImage = document.querySelector('#gradientImage')
+
+// THEME COLOURS & COLOUR WEIGHT & SHADOW SIZE:
+const colours = {
+    'red': ['#ff004f', '#b54769'],
+    'blue': ['#2c1ec9', '#0c69d3'],
+    'cyan': ['#40f7d0', '#93fae4'],
+    'purple': ['#b841f0', '#c88ae6'],
+    'yellow': ['#d9c709', '#fff159'],
+    'orange': ['#ff9830', '#f5aa5d'],
+    'green': ['#6df768', '#9bf598']
+}
+
+
+
+const colour = 'green';
+const colourWeight = '500';
+const shadowSize = 'md';
+const r = document.querySelector(':root');
+
+
+function myLoad(){
+    aboutDiv.classList.add('hover:shadow-' + colour + '-' + colourWeight, 'hover:shadow-' + shadowSize);
+    aboutImage.src = 'images/blurry-gradient-haikei-' + colour + '.png';
+    r.style.setProperty('--primary', colours[colour][0])
+    r.style.setProperty('--secondary', colours[colour][1])
 }
 
 function openTab(tabName){
@@ -32,6 +60,11 @@ function closeMenu(){
 }
 
 
+function isMobile() {
+    const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    return regex.test(navigator.userAgent);
+}
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
@@ -49,13 +82,13 @@ const phoneObserver = new IntersectionObserver( (entries) =>{
     entries.forEach( (entry) => {
         if(entry.isIntersecting) {
             if(entry.target.id == 'about-col-2'){
-                if(window.innerWidth < 600) {
-                    entry.target.classList.remove('hover:shadow-red-950', 'hover:shadow-lg', 'hover:scale-105');
-                    entry.target.classList.add('scale-105', 'shadow-lg', 'shadow-red-950');
+                if(isMobile()) {
+                    entry.target.classList.remove('hover:shadow-' + colour + '-' + colourWeight, 'hover:shadow-' + shadowSize, 'hover:scale-105');
+                    entry.target.classList.add('scale-105', 'shadow-' + shadowSize, 'shadow-' + colour + '-' + colourWeight);
                 }
             }
             if(entry.target.id == 'service-1' || entry.target.id == 'service-2'){
-                if(window.innerWidth < 600) {
+                if(isMobile()) {
                     entry.target.classList.remove('service-tile');
                     entry.target.classList.add('service-tile-phone');
                 }
@@ -64,12 +97,12 @@ const phoneObserver = new IntersectionObserver( (entries) =>{
 
         else {
             if(entry.target.id == 'about-col-2'){
-                if(window.innerWidth < 600) {
-                    entry.target.classList.remove('scale-105', 'shadow-lg', 'shadow-red-950');
+                if(isMobile()) {
+                    entry.target.classList.remove('scale-105', 'shadow-' + shadowSize, 'shadow-' + colour + '-'+ colourWeight);
                 }
             }
             if(entry.target.id == 'service-1' || entry.target.id == 'service-2'){
-                if(window.innerWidth < 600) {
+                if(isMobile()) {
                     entry.target.classList.remove('service-tile-phone');
                 }
             }
