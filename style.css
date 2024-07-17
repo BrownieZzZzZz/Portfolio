@@ -510,14 +510,14 @@ nav .fa-solid{
 
 .hide {
     opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
+    scale: 0.6;
+    filter: blur(40px);
 }
 
 .show {
     opacity: 1;
+    scale: 1;
     filter: blur(0);
-    transform: translateX(0);
 }
 
 .menu li:nth-child(2){
@@ -553,7 +553,7 @@ nav .fa-solid{
 
 
 .blob {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   fill: var(--primary);

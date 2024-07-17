@@ -6,11 +6,18 @@ const form = document.forms['submit-to-google-sheet']
 const message = document.getElementById('confirm-message');
 const hiddenElements = document.querySelectorAll('.hide');
 const phoneElements = document.querySelectorAll('.phone-element');
+const elementOptions = {
+}
 const phoneOptions = {
     threshold: 0.8
 }
 const aboutDiv = document.querySelector('#about-col-2');
 const aboutImage = document.querySelector('#gradientImage')
+
+
+
+
+
 
 // THEME COLOURS & COLOUR WEIGHT & SHADOW SIZE:
 const colours = {
@@ -23,9 +30,10 @@ const colours = {
     'green': ['#6df768', '#9bf598']
 }
 
+coloursList = ['red', 'blue', 'cyan', 'purple', 'yellow', 'orange', 'green'];
 
 
-const colour = 'green';
+const colour = coloursList[Math.floor( Math.random() * 7)];
 const colourWeight = '500';
 const shadowSize = 'md';
 const r = document.querySelector(':root');
@@ -56,7 +64,7 @@ function openMenu(){
 }
 
 function closeMenu(){
-    menu.style.right = "-200px";
+    menu.style.right = "-400px";
 }
 
 
@@ -76,7 +84,8 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.remove('show');
         }
     });
-});
+}, elementOptions);
+
 
 const phoneObserver = new IntersectionObserver( (entries) =>{
     entries.forEach( (entry) => {
@@ -109,6 +118,7 @@ const phoneObserver = new IntersectionObserver( (entries) =>{
         }
     })
 }, phoneOptions)
+
 
 
 phoneElements.forEach( (element) => phoneObserver.observe(element));
