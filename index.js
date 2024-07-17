@@ -7,7 +7,7 @@ const message = document.getElementById('confirm-message');
 const hiddenElements = document.querySelectorAll('.hide');
 const phoneElements = document.querySelectorAll('.phone-element');
 const phoneOptions = {
-    threshold: 0.9
+    threshold: 0.8
 }
 const aboutDiv = document.querySelector('#about-col-2');
 const aboutImage = document.querySelector('#gradientImage')
