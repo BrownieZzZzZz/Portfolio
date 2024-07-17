@@ -231,7 +231,13 @@ nav ul li a:hover::after{
     height: 45%;
     font-size:15px;
 }
-.services-list div:hover{
+.service-tile-phone{
+    background: var(--red) !important;
+    transform: translateY(-10px) !important;
+    opacity: 1 !important;
+    scale: 1.05 !important;
+}
+.service-tile:hover{
     background: var(--red);
     transform: translateY(-10px);
     opacity: 1;
