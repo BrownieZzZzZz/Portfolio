@@ -484,6 +484,9 @@ nav .fa-solid{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+    .tab-contents.active-tab#education{
+        height: 180px;
+    }
 }
 
 
