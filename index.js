@@ -5,7 +5,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzMqpXxW0owSd9UVlhm0n
 const form = document.forms['submit-to-google-sheet']
 const message = document.getElementById('confirm-message');
 const hiddenElements = document.querySelectorAll('.hide');
-  
 
 function openTab(tabName){
     for(tabLink of tabLinks){
@@ -56,3 +55,4 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+
