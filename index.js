@@ -6,6 +6,7 @@ const form = document.forms['submit-to-google-sheet']
 const message = document.getElementById('confirm-message');
 const hiddenElements = document.querySelectorAll('.hide');
 const phoneElements = document.querySelectorAll('.phone-element');
+const blob = document.querySelector('.blob');
 const elementOptions = {
 }
 const phoneOptions = {
@@ -37,6 +38,12 @@ const colour = coloursList[Math.floor( Math.random() * 7)];
 const colourWeight = '500';
 const shadowSize = 'md';
 const r = document.querySelector(':root');
+const rs = getComputedStyle(r);
+
+setTimeout(() =>{
+    blob.classList.remove('blob-hide');
+    blob.style.fill = rs.getPropertyValue('--primary');
+}, 1000);
 
 
 function myLoad(){
@@ -118,9 +125,6 @@ const phoneObserver = new IntersectionObserver( (entries) =>{
         }
     })
 }, phoneOptions)
-
-
-
 phoneElements.forEach( (element) => phoneObserver.observe(element));
 hiddenElements.forEach( (element) => observer.observe(element));
 

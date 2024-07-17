@@ -548,19 +548,23 @@ nav .fa-solid{
     cursor:pointer;
 }
 
-
-
+.blob-hide{
+    opacity: 0;
+    filter: blur(60px);
+}
 
 
 .blob {
   position: fixed;
+  opacity: 1;
   top: 0;
   left: 0;
-  fill: var(--primary);
+  fill: transparent;
   filter: blur(4px);
   width: 50vmax;
   z-index: -1;
-  animation: move 10s ease-in-out infinite;
+  transition: all 3s;
+  animation: move 8s ease-in-out infinite;
   transform-origin: 50% 50%;
 }
 
