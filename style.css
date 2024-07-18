@@ -23,6 +23,9 @@ body{
     position: relative;
     overflow-x: hidden;
 }
+.main-container{
+    display: none;
+}
 #header{
     width: 100%;
     height:100vh;
@@ -465,7 +468,7 @@ nav .fa-solid{
         text-shadow: 2px 1px 3px var(--dark);
         position: fixed;
         top: 0;
-        right: -200px;
+        right: -250px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
@@ -595,4 +598,27 @@ nav .fa-solid{
   78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
   80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
   100% { transform: scale(1)   translate(10px, -30px); }
+}
+
+
+
+/* loading animation */
+
+.animation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--darkgray);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.child-div{
+    width: 12.5%;
+    height: 100vh;
 }
