@@ -7,6 +7,7 @@ const message = document.getElementById('confirm-message');
 const hiddenElements = document.querySelectorAll('.hide');
 const phoneElements = document.querySelectorAll('.phone-element');
 const blob = document.querySelector('.blob');
+
 const elementOptions = {
 }
 const phoneOptions = {
