@@ -36,7 +36,7 @@ coloursList = ['red', 'blue', 'cyan', 'purple', 'yellow', 'orange', 'green'];
 
 const colour = coloursList[Math.floor( Math.random() * 7)];
 const colourWeight = '500';
-const shadowSize = 'md';
+const shadowSize = 'sm';
 const r = document.querySelector(':root');
 const rs = getComputedStyle(r);
 

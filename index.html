@@ -27,7 +27,7 @@
       <div class="container">
         <nav>
           <div class="logo hide hover:cursor-pointer animate-pulse">
-            <span class="gradient-text-1">R</span>aed.
+            <span class="gradient-text-1 name">R</span>aed.
           </div>
           <ul class="menu">
             <li class="list hide"><a href="#header">Home</a></li>
@@ -44,7 +44,7 @@
           <h1>
             Hi, i'm
             <span
-              class="gradient-text-1 transition transition-all duration-500 hover:ml-6"
+              class="gradient-text-1 name transition transition-all duration-500 hover:ml-6"
               >Raed</span
             ><br />Lafi from Tunisia
           </h1>
@@ -62,8 +62,8 @@
             id = "about-col-2"
             class="about-col-2 phone-element hide p-5 shadow rounded-xl hover:scale-105"
           >
-            <h1 class="sub-title">About Me</h1>
-            <p>
+            <h1 class="sub-title name">About Me</h1>
+            <p class = "mini-name">
               Computer science student seeking to gain experience through a
               valuable internship. Proficient in development methodologies such
               as SCRUM, tools and processes contributing to design and rollout
@@ -73,24 +73,24 @@
             </p>
 
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="openTab('skills')">
+              <p class="tab-links active-link mini-name" onclick="openTab('skills')">
                 Skills
               </p>
-              <p class="tab-links" onclick="openTab('experience')">
+              <p class="tab-links mini-name" onclick="openTab('experience')">
                 Experience
               </p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <p class="tab-links mini-name" onclick="openTab('education')">Education</p>
             </div>
 
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li>
+                <li class="mini-name">
                   <span>Front End</span><br />I specialize in crafting
                   responsive and user-friendly web interfaces using VueJs,
                   TailwindCss, Bootstrap
                 </li>
-                <li>
-                  <span>Back End</span><br />I specialize in creating robust and
+                <li class="mini-name">
+                  <span>Back End</span><br/>I specialize in creating robust and
                   scalable server-side applications using technologies like
                   Node.js, ExpressJs and MongoDB, ensuring seamless data
                   management and secure API integrations.
@@ -100,11 +100,11 @@
 
             <div class="tab-contents" id="experience">
               <ul>
-                <li>
+                <li class="mini-name">
                   <span>Scrum / Web developer</span><br />Worked on a University
                   project in a SCRUM work environment ( web developer ).
                 </li>
-                <li>
+                <li class="mini-name">
                   <span>Web Developer</span><br />Worked on a web application
                   for a web development Hackathon.
                 </li>
@@ -112,17 +112,15 @@
             </div>
             <div class="tab-contents" id="education">
               <ul>
-                <li>
-                  <span
-                    >Bachelor of Computer Science - Information Systems &
-                    Software Engineering</span
-                  >
+                <li class="mini-name">
+                  <span>Bachelor of Computer Science - Information Systems &
+                    Software Engineering</span>
                 </li>
-                <li>
+                <li class="mini-name">
                   <span>September 2023 - Present</span><br />Higher Institute of
                   Computer Science of Medenine
                 </li>
-                <li>
+                <li class="mini-name">
                   <span>September 2022 - June 2023</span><br />Faculty of
                   Science of Monastir
                 </li>
@@ -135,9 +133,9 @@
 
     <div id="services">
       <div class="container">
-        <h1 class="sub-title hide">My Services</h1>
+        <h1 class="sub-title hide mini-name">My Services</h1>
         <div class="services-list">
-          <div id="service-1" class="hide service-tile phone-element">
+          <div id="service-1" class="hide service-tile mini-name phone-element">
             <i class="fa-solid fa-code"></i>
             <h2>Front End Developer</h2>
             <p>
@@ -149,7 +147,7 @@
               experiences.
             </p>
           </div>
-          <div id="service-2" class="hide service-tile phone-element">
+          <div id="service-2" class="hide service-tile mini-name phone-element">
             <i class="fas fa-crop-alt"></i>
             <h2>Back End Developer</h2>
             <p>
@@ -167,7 +165,7 @@
 
     <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title hide">My Work</h1>
+        <h1 class="sub-title hide mini-name">My Work</h1>
         <div class="work-list">
           <div class="work hide">
             <img src="/images/Recipe-app-preview.png" />
@@ -208,13 +206,13 @@
             </div>
           </div>
         </div>
-        <a href="https://github.com/BrownieZzZzZz" class="btn hide">See more</a>
+        <a href="https://github.com/BrownieZzZzZz" class="btn hide mini-name">See more</a>
       </div>
     </div>
     <div id="contact">
       <div class="container">
         <div class="row">
-          <div class="contact-left">
+          <div class="contact-left mini-name">
             <h1 class="sub-title hide">Contact Me</h1>
             <p class="hide">
               <i class="fas fa-paper-plane"></i>lafiraed04@gmail.com
@@ -240,7 +238,7 @@
               >Download Resume</a
             >
           </div>
-          <div class="contact-right hide">
+          <div class="contact-right hide mini-name">
             <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
@@ -256,11 +254,11 @@
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
-            <span id="confirm-message">Message sent successfully !</span>
+            <span id="confirm-message" class="mini-name">Message sent successfully !</span>
           </div>
         </div>
       </div>
-      <div class="copyright">
+      <div class="copyright mini-name">
         <p class="hide">Copyright © Raed.</p>
       </div>
     </div>
