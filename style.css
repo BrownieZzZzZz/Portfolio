@@ -461,6 +461,8 @@ nav .fa-solid{
     }
     nav ul{
         background: var(--primary);
+        box-shadow: 2px 2px 4px 2px var(--dark);
+        text-shadow: 2px 1px 3px var(--dark);
         position: fixed;
         top: 0;
         right: -200px;
