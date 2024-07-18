@@ -49,7 +49,7 @@ setTimeout(() =>{
 
 function myLoad(){
     aboutDiv.classList.add('hover:shadow-' + colour + '-' + colourWeight, 'hover:shadow-' + shadowSize);
-    aboutImage.src = 'images/blurry-gradient-haikei-' + colour + '.png';
+    //aboutImage.src = 'images/blurry-gradient-haikei-' + colour + '.png';
     r.style.setProperty('--primary', colours[colour][0])
     r.style.setProperty('--secondary', colours[colour][1])
 }
