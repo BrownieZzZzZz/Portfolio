@@ -120,6 +120,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
     border-radius:10px;
     transition: all 0.8s;
+    position: relative;
 }
 .sub-title{
     font-size: 60px;
@@ -401,7 +402,6 @@ form input:focus, form textarea:focus{
     scale:1.025;
     border: 2px solid var(--primary);
 }
-
 form .btn2{
     padding: 14x 60px;
     font-size: 18px;
